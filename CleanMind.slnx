@@ -1,6 +1,10 @@
 <Solution>
   <Folder Name="/API/" />
-  <Folder Name="/Core/" />
+  <Folder Name="/Core/">
+    <Project Path="CleanMind.Domain/CleanMind.Domain.csproj" />
+  </Folder>
   <Folder Name="/Infrastructure/" />
-  <Folder Name="/Tests/" />
+  <Folder Name="/Tests/">
+    <Project Path="CleanMind.Tests/CleanMind.Tests.csproj" Id="b0361de2-28ec-416c-b6a5-1f792fc8db35" />
+  </Folder>
 </Solution>
