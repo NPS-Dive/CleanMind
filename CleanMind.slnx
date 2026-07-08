@@ -4,7 +4,9 @@
     <Project Path="CleanMind.Application/CleanMind.Application.csproj" Id="d27d3d95-aa28-4ec1-8600-2fbc3b24aa4a" />
     <Project Path="CleanMind.Domain/CleanMind.Domain.csproj" />
   </Folder>
-  <Folder Name="/Infrastructure/" />
+  <Folder Name="/Infrastructure/">
+    <Project Path="CleanMind.Persistence/CleanMind.Persistence.csproj" Id="584e7573-83f3-4221-a9d0-6b0934332cfc" />
+  </Folder>
   <Folder Name="/Tests/">
     <Project Path="CleanMind.Tests/CleanMind.Tests.csproj" Id="b0361de2-28ec-416c-b6a5-1f792fc8db35" />
   </Folder>
