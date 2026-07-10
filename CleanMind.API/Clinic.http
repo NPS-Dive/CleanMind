@@ -1,0 +1,18 @@
+@CleanMind.API_HostAddress = http://localhost:5075/api/Clinic
+
+
+###Get Clinic By Id
+GET {{CleanMind.API_HostAddress}}/GetClinicById/019f4cd8-adc3-766a-b7eb-b982c944a777
+ACCEPT: application/json
+
+
+### Create Clinic
+
+POST {{CleanMind.API_HostAddress}}/CreateClinic
+Content-Type: application/json
+
+
+{
+  "name":"Psychotherapy Clinic 01"
+}
+###

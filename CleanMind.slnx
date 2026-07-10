@@ -1,5 +1,7 @@
 <Solution>
-  <Folder Name="/API/" />
+  <Folder Name="/API/">
+    <Project Path="CleanMind.API/CleanMind.API.csproj" Id="035c5bd8-3071-46c1-b464-24a9c4ace871" />
+  </Folder>
   <Folder Name="/Core/">
     <Project Path="CleanMind.Application/CleanMind.Application.csproj" Id="d27d3d95-aa28-4ec1-8600-2fbc3b24aa4a" />
     <Project Path="CleanMind.Domain/CleanMind.Domain.csproj" />
