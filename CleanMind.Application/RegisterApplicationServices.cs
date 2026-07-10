@@ -1,5 +1,7 @@
 ﻿using CleanMind.Application.Features.Clinics.Commands.CreateClinic;
+using CleanMind.Application.Features.Clinics.Commands.UpdateClinic;
 using CleanMind.Application.Features.Clinics.Queries.GetClinicDetails;
+using CleanMind.Application.Features.Clinics.Queries.GetClinicsLIst;
 using CleanMind.Application.Utilities;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,6 +14,8 @@ public static class RegisterApplicationServices
         services.AddTransient<IMediator, SimpleMediator>();
         services.AddScoped<IRequestHandler<CreateClinicCommand, Guid>, CreateClinicCommandHandler>();
         services.AddScoped<IRequestHandler<GetClinicDetailsQuery, ClinicDetailsDto>, GetClinicDetailsQueryHandler>();
+        services.AddScoped<IRequestHandler<GetClinicsListQuery, List<ClinicsListDto>>, GetClinicsListQueryHandler>();
+        services.AddScoped<IRequestHandler<UpdateClinicCommand>, UpdateClinicCommandHandler>();
 
         return services;
         }
