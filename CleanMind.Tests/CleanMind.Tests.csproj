@@ -21,5 +21,9 @@
     <ProjectReference Include="..\CleanMind.Domain\CleanMind.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Infrastructure\" />
+  </ItemGroup>
+
 
 </Project>
