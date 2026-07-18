@@ -1,5 +1,6 @@
 ﻿using CleanMind.API.DTOS.Clinics;
 using CleanMind.Application.Features.Clinics.Commands.CreateClinic;
+using CleanMind.Application.Features.Clinics.Commands.DeleteClinic;
 using CleanMind.Application.Features.Clinics.Commands.UpdateClinic;
 using CleanMind.Application.Features.Clinics.Queries.GetClinicDetails;
 using CleanMind.Application.Features.Clinics.Queries.GetClinicsLIst;
@@ -82,5 +83,17 @@ namespace CleanMind.API.Controllers
         }
 
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteClinic(Guid id)
+        {
+            var command = new DeleteClinicCommand()
+            {
+                Id = id,
+            };
+
+            await _mediator.SendAsync(command);
+
+            return NoContent();
+        }
         }
     }

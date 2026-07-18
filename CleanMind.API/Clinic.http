@@ -1,6 +1,10 @@
 @CleanMind.API_HostAddress = http://localhost:5075/api/Clinic
 
 
+### DeleteClinc
+
+DELETE {{CleanMind.API_HostAddress}}/DeleteClinic/019f4cd8-adc3-766a-b7eb-b982c944a777
+
 ### UpdateClinicName
 PUT {{CleanMind.API_HostAddress}}/UpdateClinicName/019f4cd8-adc3-766a-b7eb-b982c944a777
 Content-Type: application/json
